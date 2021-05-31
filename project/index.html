@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project List</title>
+    <link rel="stylesheet" href="../css/file.css">
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <link rel="stylesheet" href="../css/embla.css">
+    <script src="../scripts/embla.js" defer></script>
+    <script src="../scripts/bulma.js" defer></script>
+    <script defer type="text/javascript" src="../scripts/project.js"></script>
+</head>
+<body class="m-0">
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="modal" id="modal">
+            <div class="modal-background" id="modal-background"></div>
+            <div class="modal-content" id="gist-mobile"></div>
+            <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
+        </div>
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="..">
+                            <img src="../images/cyvax.png" alt="CyVaX's Portfolio">
+                        </a>
+                    <span class="navbar-burger burger" data-target="mobileNavbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </span>
+                    </div>
+                    <div id="mobileNavbarMenu" class="navbar-menu is-hidden-desktop is-flex-direction-column">
+                        <a class="is-size-5 has-text-centered has-text-grey-dark" href="../">Home</a>
+                        <a class="is-size-5 has-text-centered is-active" href="../project">Project</a>
+                        <a class="is-size-5 has-text-centered has-text-grey-dark" href="../contact">Contact</a>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class=""><a href="../">Home</a></li>
+                                    <li class="is-active"><a href="./">Project</a></li>
+                                    <li><a href="../contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container is-flex is-justify-content-center is-flex-direction-column is-align-items-center" id="particles-js">
+                <noscript>
+                    <div class="nojs has-background-white is-flex is-justify-content-center is-align-items-center wh-full">
+                        <div class="notification is-warning">Cette page a besoin de javascript, merci de l'activer.</div>
+                    </div>
+                </noscript>
+                <div class="embla is-flex">
+                    <button class="embla__button is-size-3 embla__button--prev is-hidden-mobile has-background-white" id="preview"><i class="fas fa-chevron-left"></i></button>
+                    <div class="embla__viewport wh-full">
+                        <div class="embla__container is-flex wh-full" id="embla__container"></div>
+                    </div>
+                    <button class="embla__button is-size-3 embla__button--next is-hidden-mobile has-background-white" id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="embla__dots is-align-self-center is-flex is-flex-wrap-wrap is-justify-content-center p-2"></div>
+
+                <script type="text/template" id="embla-dot-template">
+                    <button class="embla__dot p-0 m-0 border is-relative is-clickable mx-3 is-flex is-align-items-center" type="button"></button>
+                </script>
+            </div>
+        </div>
+        <div class="hero-foot">
+            <div class="container is-flex is-justify-content-center">
+                <p class="mb-2">cyvax -&nbsp;<span id="year">year</span></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.onload = function() {
+            get_data(embla_gen, process_all_data);
+        }
+        document.getElementById("year").innerHTML = new Date().getFullYear().toString();
+    </script>
+</body>
+</html>

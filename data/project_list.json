@@ -1,0 +1,86 @@
+{
+    "d976815ebd58700b1fcc0db2aee67470": {
+    "name": "CyvBot 2.0",
+    "description": "***CyvBot*** est un bot discord que je développe, la version 1.0 était basée sur le très connu [Red](https://github.com/Cog-Creators/Red-DiscordBot).[br-2]La version 2.0 de mon bot est une réécriture complète pour ne plus être dépendant de Red, contrairement à Red, ma version du bot n'utilise plus de fichier Json pour stocker des données mais a la place un serveur [PostgreSQL](https://www.postgresql.org/).[br-2]Ce projet est pour le moment toujours propriétaire le temps que son développement soit bien plus avancé.[br]Pour le moment vous avez ici la version 2.0.3 du fichier principale.",
+    "lang": "python",
+    "image":  "cyvbot.jpg"
+    },
+    "763136b3accd3bf5fb8217f327ff0980": {
+        "name": "PrivatebinPHP",
+        "description": "**PrivatebinPHP** est ma première librairie que j'ai créée, j'ai dû créer cette librairie lorsque j'ai voulu réécrire tout le code de mon serveur pour l'un de mes autres projets nommés : [CyvBot 2.0](load_file.html?gist=d976815ebd58700b1fcc0db2aee67470).[br-2]J'avais besoin d'utiliser [PrivateBin](https://privatebin.info) sur ce projet et je récrivais l'api en PHP (à la place de [Node.JS](https://nodejs.org/)) mais il n'existait aucune librairie pour PrivateBin sur PHP, j'ai donc dû développer toute la librairie pour ce projet.[br-2]PrivateBin est un 'pastebin' (ou gestionnaire d'extraits de texte et de code source) minimaliste et open source, dans lequel le serveur n'a aucune connaissance des données envoyées. Les données sont chiffrées/déchiffrées dans le navigateur par un chiffrement AES 256 bits.[br-2]Chiffrement avec AES-256, compression avec zlib et envoie de données avec curl sont à la base de cette librairie.[hr]Disponible sur son [Github](https://github.com/cyvax/Privatebin_PHP) ou son [Composer](https://packagist.org/packages/cyvax/privatebin_php).",
+        "lang": "PHP",
+        "image": "privatebinPHP.jpg"
+    },
+    "66f7891f9c6626413d93cf0dda5e0a77": {
+        "name": "Coffee Machine",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "coffee_machine.jpg"
+    },
+    "d84ff4f2c1113726285143c1bfb60f1f": {
+        "name": "Text-Based browser",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "text_based_browser.jpg"
+    },
+    "0e4bb4a037a19407500e60a5f16a0b83": {
+        "name": "2v2 Tic-Tac-Toe",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "tic_tac_toe.jpg"
+    },
+    "467a36eea73ea6ea6f266594c58af5eb": {
+        "name": "AI Tic-Tac-Toe",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.[hr]J'ai pris beaucoup de plaisir sur celui-ci, l'intelligence artificielle existant sur ce script est tout simplement un algorithme [minimax](https://fr.wikipedia.org/wiki/Algorithme_minimax).",
+        "lang":  "python",
+        "image":  "tic_tac_toe_ai.jpg"
+    },
+    "f4e72438b00cfa387f380b7f63e20be3": {
+        "name": "Rock-Paper-Scissors",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "rock_paper_scissors.jpg"
+    },
+    "b1244beb48b891d0b8801410b02ab7b7": {
+        "name": "Numeric Matrix Processor",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "matrix.jpg"
+    },
+    "e8e1cac14f31505c14e02fff43d91813": {
+        "name": "Smart Calculator",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "smart_calculator.jpg"
+    },
+    "298290d568075904154ca4efabf1418c": {
+        "name": "Credit Calculator",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.",
+        "lang":  "python",
+        "image":  "credit_calculator.jpg"
+    },
+    "ea2f5531c74db2a0f5868c8399ee2a78": {
+        "name": "Discord Webhooks App",
+        "description": "**Discord Webhooks App** aussi appelé dwebhooks pour la simplicité est une application que j'ai faite pour utiliser les [Webhooks](https://support.discord.com/hc/fr/articles/228383668-Utiliser-les-Webhooks) de [Discord](http://discord.com/), un petit projet Fun utilisant [QT](https://www.qt.io/).[hr]Disponible sur son [Github](https://github.com/cyvax/dwebhooks).",
+        "lang": "python",
+        "image":  "dwebhooks.jpg"
+    },
+    "43ee5335dcdcb4e76cb9d739f2c4c4c1": {
+        "name": "Hangman with Sqlite3",
+        "description": "Ce script fait partie des projets Python de [HyperSkill](https://hyperskill.org/).[br-2]j'ai fait toute la formation python de Hyperskill pendant le Confinement 2020.[br-2]j'ai fait ce pendu à l'aide d'une base de données sqlite3, cette base de données comprend tous les mots anglais possibles.[hr]Disponible sur le GitHub de [Cullyege](https://github.com/Cullyege/Hacktoberfest2020/tree/master/Python/sqlite_hangman)",
+        "lang": "python",
+        "image": "hangman.jpg"
+    },
+        "c8864597709af386b23742b9fad409a9": {
+        "name": "WYSIWYG",
+        "description": "**WYSIWYG** est un projet que j'ai fait pour l'école [EEMI](http://eemi.com/).[br-2]Le but recherché ici était d'avoir une interface administrateur avec un éditeur [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG), ici on utilise [TinyMCE](https://www.tiny.cloud/).[hr]Actuellement disponible sur cette adresse : [cyvax.fr/wysiwyg](https://cyvax.fr/wysiwyg/WYSIWYG.zip) ou en téléchargement l'archive [WYSIWYG.zip](https://cyvax.fr/wysiwyg/WYSIWYG.zip).",
+        "lang": "PHP & HTML & JS",
+        "image":  "wysiwyg.jpg"
+    },
+    "219f9bebca1af4b8c80b3b9cef4bc647": {
+            "name": "CuteRPC",
+            "description": "**CuteRPC** est un projet que j'ai fait pour utiliser le [Rich Presence](https://discord.com/rich-presence) de [Discord](http://discord.com/).[br-2]Le but recherché ici était de pouvoir utiliser le Rich Presence de Discord avec ses propres paramètres.[hr]Actuellement seulement disponible en [lien direct](https://cyvax.fr/setup/CuteRPC%20Setup.exe).",
+            "lang": "python",
+            "image":  "cuteRPC.jpg"
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/file.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="../scripts/bulma.js" defer></script>
+    <script src="../scripts/contact.js" defer></script>
+</head>
+<body class="m-0">
+    <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="./">
+                            <img src="../images/cyvax.png" alt="CyVaX's Portfolio">
+                        </a>
+                        <span class="navbar-burger burger" data-target="mobileNavbarMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <div id="mobileNavbarMenu" class="navbar-menu is-hidden-desktop is-flex-direction-column">
+                        <a class="is-size-5 has-text-centered has-text-grey-dark" href="../">Home</a>
+                        <a class="is-size-5 has-text-centered has-text-grey-dark" href="../project">Project</a>
+                        <a class="is-size-5 has-text-centered is-active" href="../contact">Contact</a>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class=""><a href="../">Home</a></li>
+                                    <li class=""><a href="../project">Project</a></li>
+                                    <li class="is-active"><a href="../contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <noscript>
+                <div class="nojs has-background-white is-flex is-justify-content-center is-align-items-center wh-full">
+                    <div class="notification is-warning">Cette page a besoin de javascript, merci de l'activer.</div>
+                </div>
+            </noscript>
+            <section class="has-text-centered">
+                <h1 class="title is-3 has-text-weight-semibold typewriter cyv-text has-text-grey">Hey &#x1F44B; please can you fill this ?</h1>
+                <section class="px-6 cyv-form">
+                    <form id="form">
+                        <input type="hidden" id="type" name="type">
+                        <div class="field has-text-left">
+                            <label for="full_name" class="has-text-weight-bold is-size-6">Nom Prénom</label>
+                            <div class="control has-icons-left mt-3 mb-5">
+                                <input class="input" type="text" placeholder="Full Name" id="full_name" name="full_name">
+                                <span class="icon is-left">
+                                <i class="far fa-user"></i>
+                            </span>
+                            </div>
+                            <label for="email" class="has-text-weight-bold is-size-6">E-Mail</label>
+                            <div class="control has-icons-left mt-3 mb-5">
+                                <input class="input" type="email" placeholder="mail@example.com" id="email" name="email">
+                                <span class="icon is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            </div>
+                            <label for="message" class="has-text-weight-bold is-size-6">Message</label>
+                            <div class="control mt-3 mb-5">
+                                <textarea class="textarea max-width" placeholder="Message Text" id="message" name="email" rows="4"></textarea>
+                            </div>
+                            <div class="control has-text-centered">
+                                <button class="button is-primary px-6" id="send">Send!</button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+        <div class="hero-foot">
+            <div class="container is-flex is-justify-content-center">
+                <p class="mb-2">cyvax -&nbsp;<span class="year">year</span></p>
+            </div>
+        </div>
+    </section>
+    <div class="notification_area px-6 pb-5 is-flex is-align-items-flex-end is-flex-direction-column-reverse is-overlay"></div>
+    <script>
+        let year = new Date().getFullYear().toString()
+        Array.from(document.getElementsByClassName("year")).map(x => x.innerHTML = year);
+        window.onload = function() {
+            const $_GET = new URLSearchParams(window.location.search);
+            const type = $_GET.get('type');
+            const hidden_value = document.getElementById("type")
+            if (["discord", "email"].includes(type)) {
+                hidden_value.value = type;
+            } else {
+                window.location = "./";
+            }
+        }
+    </script>
+</body>
+</html>

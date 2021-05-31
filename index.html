@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio CyVaX</title>
+    <link rel="stylesheet" href="./css/file.css">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" crossorigin="anonymous">
+    <script type="text/javascript" src="./scripts/tagcanvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.24.1/dist/tsparticles.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./scripts/ts_scripts.js" defer></script>
+    <script src="./scripts/bulma.js" defer></script>
+</head>
+<body class="m-0">
+    <section class="hero is-fullheight is-default is-bold">
+        <div id="tsparticles"></div>
+        <div class="modal" id="modal">
+            <div class="modal-background" id="modal-background"></div>
+            <div class="modal-content" id="gist-mobile">
+                ...
+            </div>
+            <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
+        </div>
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="./">
+                            <img src="./images/cyvax.png" alt="CyVaX's Portfolio">
+                        </a>
+                        <span class="navbar-burger burger" data-target="mobileNavbarMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <div id="mobileNavbarMenu" class="navbar-menu is-hidden-desktop is-flex-direction-column">
+                        <a class="is-size-5 has-text-centered is-active" href="./">Home</a>
+                        <a class="is-size-5 has-text-centered has-text-grey-dark" href="./project">Project</a>
+                        <a class="is-size-5 has-text-centered has-text-grey-dark" href="./contact">Contact</a>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <div class="tabs is-right">
+                                <ul>
+                                    <li class="is-active"><a href="./">Home</a></li>
+                                    <li class=""><a href="./project">Project</a></li>
+                                    <li class=""><a href="./contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <noscript>
+                <div class="nojs has-background-white is-flex is-justify-content-center is-align-items-center wh-full">
+                    <div class="notification is-warning">Cette page a besoin de javascript, merci de l'activer.</div>
+                </div>
+            </noscript>
+            <section class="has-text-centered">
+                <figure class="image is-1by1 image-cyvax">
+                    <img src="./images/cyvax.png" alt="cyvax's avatar">
+                </figure>
+                <section>
+                    <h1 class="title is-1 has-text-weight-semibold typewriter">I'm CyVaX</h1>
+                    <h3 class="subtitle">Web Développer</h3>
+                    <div class="buttons is-centered m-4">
+                        <a target="_blank" href="https://twitter.com/cyvax/">
+                            <button class="button is-outlined" id="twitter">
+                            <span class="icon is-small">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </button>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/rapha%C3%ABl-cercas/">
+                            <button class="button is-outlined" id="linkedin">
+                            <span class="icon is-small">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                        </button>
+                        </a>
+                        <a target="_blank" href="https://github.com/cyvax">
+                            <button class="button is-outlined" id="github">
+                            <span class="icon is-small">
+                                <i class="fab fa-github"></i>
+                            </span>
+                        </button>
+                        </a>
+                    </div>
+
+                </section>
+            </section>
+        </section>
+        <div class="hero-foot">
+            <div class="container is-flex is-justify-content-center">
+                <p class="mb-2">cyvax -&nbsp;<span class="year">year</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-fullheight is-flex is-flex-direction-column has-background-black has-text-white">
+        <div id="tsparticles-black"></div>
+        <section class="container is-flex is-justify-content-center is-flex-direction-column is-align-items-center pointer-none">
+            <div class="columns m-0 is-vcentered is-centered">
+                <div class="column is-half mr-4 is-flex is-flex-direction-column is-justify-content-center">
+                    <h2 class="title is-4 has-text-white"><span class="pointer-auto">A mon propos</span></h2>
+                    <p><span class="pointer-auto">Je suis un développeur FullStack basé a Paris.</span><br><br>
+                        <span class="pointer-auto">touche a tout, passionné par l'informatique et l'électronique, j'adore me plonger dans du code et créer de nouvelle chose.</span></p>
+                </div>
+                <div class="column is-half ml-4 is-flex is-flex-direction-column is-justify-content-center tagcloud is-relative p-0" style="z-index: 2">
+                    <canvas id="TagCanvas"  width="700" height="300" class="wh-full pointer-auto">
+                        <ul>
+                            <li><a target="_blank" href="https://www.python.org/">Python</a></li>
+                            <li><a target="_blank" href="https://html.spec.whatwg.org/">HTML5</a></li>
+                            <li><a target="_blank" href="https://www.w3.org/Style/CSS/">CSS3</a></li>
+                            <li><a target="_blank" href="https://developer.mozilla.org/fr/docs/Web/JavaScript">JavaScript</a></li>
+                            <li><a target="_blank" href="https://www.php.net/">PHP</a></li>
+                            <li><a target="_blank" href="https://en.wikipedia.org/wiki/SQL">SQL</a></li>
+                            <li><a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a></li>
+                            <li><a target="_blank" href="https://www.mysql.com/fr/">MySQL</a></li>
+                            <li><a target="_blank" href="https://www.office.com/">Suite Office</a></li>
+                            <li><a target="_blank" href="http://adobe.com/">Suite Adobe</a></li>
+                        </ul>
+                    </canvas>
+                </div>
+            </div>
+        </section>
+        <div class="hero-foot">
+            <div class="container is-flex is-justify-content-center">
+                <p class="mb-2">cyvax -&nbsp;<span class="year">year</span></p>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        let year = new Date().getFullYear().toString()
+        Array.from(document.getElementsByClassName("year")).map(x => x.innerHTML = year);
+
+        window.onload = function() {
+            let options = {
+                fadeIn: 800,
+                textColour: '#fff',
+                textHeight: 15,
+                depth: 1,
+                minBrightness: 0.2,
+                wheelZoom: false,
+                reverse: true,
+                shuffleTags: true,
+                stretchX: 1.5,
+                initial: [0.300, -0.300],
+                maxSpeed: 0.05,
+                minSpeed: 0.01,
+                restart: true
+            };
+            TagCanvas.Start('TagCanvas', '', options);
+        };
+    </script>
+</body>
+</html>

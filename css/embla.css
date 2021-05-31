@@ -1,0 +1,122 @@
+.embla {
+    overflow: hidden;
+    width: 65vw;
+    height: 40vh;
+}
+
+.embla__container a {
+    position: relative;
+    flex: 0 0 33.25%;
+    border: solid black 2px;
+    border-right: none;
+}
+
+.embla__button {
+    z-index: 1;
+    border: none;
+}
+
+.bg-image {
+    position: absolute;
+    background-color: rgb(4 220 154 / 37%);
+    z-index: 1;
+}
+
+.embla__slide:hover:after {
+    content: attr(data-lang);
+    font-size: 1.15vw;
+    text-shadow: 0 0 10px black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    margin-top: 25px;
+    z-index: 2;
+    color: #fff;
+}
+
+.embla__slide:hover:before {
+    content: attr(data-name);
+    font-size: 3vmin;
+    text-shadow: 0 0 10px black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+.embla__slide:hover .bg-image {
+    visibility: visible !important;
+}
+
+.embla__dot {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.embla__dot:after {
+    background-color: #efefef;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    content: "";
+}
+
+.embla__dot.is-selected:after {
+    background-color: #1bcacd;
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 500px) {
+    .embla__container a {
+        flex: 0 0 99.4%;
+    }
+
+    .embla__slide:hover:before {
+        font-size: 5vmin;
+    }
+
+    .embla__slide:hover:after {
+        font-size: 2vmin;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .embla__container a {
+        flex: 0 0 49.4%;
+    }
+
+    .embla__slide:hover:before {
+        font-size: 2.5vmin;
+    }
+
+    .embla__slide:hover:after {
+        font-size: 2.15vw;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .embla__container a {
+        flex: 0 0 33.25%;
+    }
+
+    .embla__slide:hover:before {
+        font-size: 1.6vw;
+    }
+
+    .embla__slide:hover:after {
+        font-size: 2vmin;
+    }
+}

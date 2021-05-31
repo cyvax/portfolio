@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/file.css">
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="../scripts/bulma.js" defer></script>
+</head>
+<body class="m-0">
+<section class="hero is-fullheight is-default is-bold">
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="./">
+                        <img src="../images/cyvax.png" alt="CyVaX's Portfolio">
+                    </a>
+                    <span class="navbar-burger burger" data-target="mobileNavbarMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </span>
+                </div>
+                <div id="mobileNavbarMenu" class="navbar-menu is-hidden-desktop is-flex-direction-column">
+                    <a class="is-size-5 has-text-centered has-text-grey-dark" href="../">Home</a>
+                    <a class="is-size-5 has-text-centered has-text-grey-dark" href="../project">Project</a>
+                    <a class="is-size-5 has-text-centered is-active" href="../contact">Contact</a>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li class=""><a href="../">Home</a></li>
+                                <li class=""><a href="../project">Project</a></li>
+                                <li class="is-active"><a href="../contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="hero-body is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+        <noscript>
+            <div class="nojs has-background-white is-flex is-justify-content-center is-align-items-center wh-full">
+                <div class="notification is-warning">Cette page a besoin de javascript, merci de l'activer.</div>
+            </div>
+        </noscript>
+        <section class="has-text-centered">
+            <h1 class="title is-2 has-text-weight-semibold typewriter cyv-text has-text-grey">Hey &#x1F44B; want to contact me ?</h1>
+            <h3 class="subtitle is-size-5 has-text-weight-semibold cyv-text has-text-grey">Pick a method!</h3>
+            <div class="buttons is-justify-content-space-evenly px-6">
+                <a class="button is-medium cyv-text has-text-grey" href="./form.html?type=discord">
+                        <span class="icon">
+                            <i class="fab fa-discord"></i>
+                        </span>
+                    <span>Discord</span>
+                </a>
+                <a class="button is-medium cyv-text has-text-grey" href="https://twitter.com/cyvax">
+                        <span class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                    <span>Twitter</span>
+                </a>
+                <a class="button is-medium cyv-text has-text-grey" href="https://www.linkedin.com/in/rapha%C3%ABl-cercas/">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                    <span>Linkedin</span>
+                </a>
+            </div>
+            <h3 class="subtitle is-size-5 has-text-weight-semibold cyv-text has-text-grey">Or you can write me a mail!</h3>
+            <div class="buttons is-justify-content-space-evenly px-6">
+                <a class="button is-medium cyv-text has-text-grey" href="./form.html?type=email">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    <span>Mail</span>
+                </a>
+            </div>
+        </section>
+    </section>
+    <div class="hero-foot">
+        <div class="container is-flex is-justify-content-center">
+            <p class="mb-2">cyvax -&nbsp;<span class="year">year</span></p>
+        </div>
+    </div>
+</section>
+<script>
+    let year = new Date().getFullYear().toString()
+    Array.from(document.getElementsByClassName("year")).map(x => x.innerHTML = year);
+</script>
+</body>
+</html>

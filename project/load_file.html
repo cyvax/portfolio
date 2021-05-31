@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/file.css">
+    <link rel="stylesheet" href="../css/bulma.min.css">
+    <link rel="stylesheet" href="../css/tomorrow-night-min.css">
+    <title></title>
+    <script defer type="text/javascript" src="../scripts/project.js"></script>
+    <script src="../scripts/bulma.js" defer></script>
+</head>
+<body class="m-0">
+<section class="hero is-fullheight is-default is-bold">
+    <div class="modal" id="modal">
+        <div class="modal-background" id="modal-background"></div>
+        <div class="modal-content mx-6" id="gist-mobile"></div>
+        <button class="modal-close is-large" aria-label="close" id="close-modal"></button>
+    </div>
+    <div class="hero-head">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="..">
+                        <img src="../images/cyvax.png" alt="CyVaX's Portfolio">
+                    </a>
+                    <span class="navbar-burger burger" data-target="mobileNavbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </span>
+                </div>
+                <div id="mobileNavbarMenu" class="navbar-menu is-hidden-desktop is-flex-direction-column">
+                    <a class="is-size-5 has-text-centered has-text-grey-dark" href="../">Home</a>
+                    <a class="is-size-5 has-text-centered is-active" href="../project">Project</a>
+                    <a class="is-size-5 has-text-centered has-text-grey-dark" href="../contact">Contact</a>
+                </div>
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="tabs is-right">
+                            <ul>
+                                <li class=""><a href="../">Home</a></li>
+                                <li class="is-active"><a href="./">Project</a></li>
+                                <li><a href="../contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <noscript>
+                <div class="nojs has-background-white is-flex is-justify-content-center is-align-items-center wh-full">
+                    <div class="notification is-warning">Cette page a besoin de javascript, merci de l'activer.</div>
+                </div>
+            </noscript>
+            <div class="columns is-vcentered is-centered is-flex is-align-items-stretch">
+                <div class="column is-half mr-4">
+                    <h1 id="title" class="title is-2 pb-6"></h1>
+                    <p id="description" class="subtitle is-8"></p>
+                    <button class="button is-info is-hidden-desktop" id="code">Voir code</button>
+                </div>
+                <div class="column is-half is-hidden-touch ml-4">
+                    <div id="gist"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-foot">
+        <div class="container">
+            <div class="container is-centered is-justify-content-center">
+                <p class="mb-2">cyvax -&nbsp;<span id="year">year</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    window.onload = function() {
+        const $_GET = new URLSearchParams(window.location.search);
+        const gist = $_GET.get('gist');
+        get_data(process_file, gist);
+    }
+    function toggle_modal() {
+        let modal = document.getElementById("modal");
+        modal.classList.toggle("is-active");
+    }
+
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    document.getElementById("code").onclick = function() {toggle_modal()};
+    document.getElementById("close-modal").onclick = function() {toggle_modal()};
+    document.getElementById("modal-background").onclick = function() {toggle_modal()};
+</script>
+</body>
+</html>

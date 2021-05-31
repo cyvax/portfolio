@@ -1,0 +1,87 @@
+h2, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image-cyvax {
+    max-width: 25rem;
+    width: 100vw;
+}
+
+.wh-full {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .cyv-form {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+
+.notification_area {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    pointer-events: none;
+}
+
+
+.notification_area .notification {
+    pointer-events: auto;
+}
+
+.notification {
+    transition: 0.5s;
+}
+
+.notification:last-child {
+    margin-bottom: 1.5rem !important;
+}
+
+.hide {
+    opacity: 0;
+    transition: 3s;
+}
+
+.modal-content {
+    height: 30em;
+}
+
+.column {
+    min-height: 50vh;
+}
+
+.nojs {
+    position: absolute;
+    z-index: 42;
+    left: 0
+}
+
+#mobileNavbarMenu.is-active {
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+.pointer-none {
+    pointer-events: none;
+}
+
+.pointer-auto {
+    pointer-events: auto;
+}
+
+#mobileNavbarMenu a {
+    width: 100%;
+}
+
+.cyv-text {
+    font-family: 'Montserrat', sans-serif;
+}
+.tsparticles-canvas-el {
+    position: absolute;
+}
